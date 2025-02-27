@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños, Mi cachetes ❤️</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            position: relative;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4); /* Fondo degradado */
+            min-height: 100vh; /* Asegura que el body ocupe al menos toda la pantalla */
+            overflow-x: hidden; /* Evita el scroll horizontal */
+        }
+
+        /* Corazones animados */
+        .hearts {
+            position: fixed; /* Cambiado a fixed para que no afecte el scroll */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1; /* Fondo detrás del contenido */
+        }
+
+        .hearts span {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ff6b6b" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
+            background-size: cover;
+            animation: animate 10s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(-10%);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        /* Estilos del contenido */
+        h1 {
+            color: #d6336c;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #333;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #d6336c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .debug-list, .future-section {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .debug-list li, .future-section p {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .future-section {
+            margin-top: 30px;
+            margin-bottom: 50px; /* Espacio adicional al final */
+        }
+
+        /* Estilos del reproductor de audio */
+        audio {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        audio:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Corazones animados -->
+    <div class="hearts">
+        <span style="left: 5%; animation-delay: 0s;"></span>
+        <span style="left: 15%; animation-delay: 2s;"></span>
+        <span style="left: 25%; animation-delay: 4s;"></span>
+        <span style="left: 35%; animation-delay: 6s;"></span>
+        <span style="left: 45%; animation-delay: 8s;"></span>
+        <span style="left: 55%; animation-delay: 10s;"></span>
+        <span style="left: 65%; animation-delay: 12s;"></span>
+        <span style="left: 75%; animation-delay: 14s;"></span>
+        <span style="left: 85%; animation-delay: 16s;"></span>
+        <span style="left: 95%; animation-delay: 18s;"></span>
+    </div>
+
+    <!-- Reproductor de audio -->
+    <audio controls autoplay loop>
+        <source src="RegaloM.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <!-- Contenido principal -->
+    <h1>¡Feliz Cumpleaños, Mi Piciosa!</h1>
+    <p>Eres el mejor "regalo" que la vida me ha dado. ❤️</p>
+    <p>Hoy celebramos el día en que el mundo se llenó de más luz gracias a ti.</p>
+
+    <!-- Botón inicial -->
+    <button onclick="mostrarBugs()" id="boton-inicial">Da click aqui piciosa mía</button>
+
+    <!-- Sección de Bugs -->
+    <div id="debug-list" class="hidden">
+        <h2>Bugs de Amor</h2>
+        <p>Aquí tienes una lista de "bugs" que he encontrado en nuestro amor. ¡Pero no quiero arreglarlos!</p>
+        <ul class="debug-list">
+            <li><strong>Bug #1:</strong> Tu sonrisa es tan brillante que a veces me deja sin palabras. ¡Es un bug que no tiene solución!</li>
+            <li><strong>Bug #2:</strong> Tus abrazos son tan cálidos que siempre me desconectan del mundo. No hay forma de arreglar eso, ¡y no quiero!</li>
+            <li><strong>Bug #3:</strong> Cada vez que estás cerca, mi corazón late más rápido de lo normal. ¡Es un error que no tiene arreglo!</li>
+            <li><strong>Bug #4:</strong> Tu voz es tan dulce que siempre quiero escucharla. ¡Es como mi canción favorita en bucle infinito!</li>
+            <li><strong>Bug #5:</strong> Eres mi compañera perfecta en todo. Juntos, todo funciona mejor, ¡como un equipo invencible!</li>
+            <li><strong>Bug #6:</strong> Cada vez que te veo, mi mente se llena de pensamientos bonitos. ¡Es como un cortocircuito de felicidad!</li>
+            <li><strong>Bug #7:</strong> Siempre sabes cómo hacerme sentir mejor, incluso en mis peores días. ¡Eres mi antídoto para todo!</li>
+            <li><strong>Bug #8:</strong> Nuestro amor es como un cuento de hadas: siempre quiero que continúe. ¡Nunca quiero que termine!</li>
+        </ul>
+    </div>
+
+    <!-- Botón para mostrar el futuro -->
+    <center><button onclick="mostrarFuture()" class="hidden" id="boton-futuro">¿Quieres saber algo más?</button></center>
+
+    <!-- Sección del Futuro -->
+    <div id="future-section" class="hidden future-section">
+        <h2>Nuestro Futuro</h2>
+        <p>Cuando estoy contigo, me siento tan relajado y en paz que el tiempo pasa volando. No siento las horas pasar porque estar a tu lado es un placer inmenso. Besarte y abrazarte es maravilloso, y cada momento a tu lado lo atesoro como un regalo.</p>
+        <p>Contigo quiero pasar toda una vida. Sueño con crear una familia juntos, criar a nuestros hijos y salir adelante, siempre de la mano. Quiero llegar a viejos a tu lado, mirar atrás y no tener ni un solo arrepentimiento, porque sé que estar contigo es la mejor decisión que he tomado.</p>
+        <p>Eres mi paz, mi felicidad y mi futuro. Te amo hoy, mañana y siempre. ❤️</p>
+    </div>
+
+    <script>
+        // Función para mostrar los bugs y ocultar el botón inicial
+        function mostrarBugs() {
+            document.getElementById("debug-list").style.display = "block"; // Muestra los bugs
+            document.getElementById("boton-inicial").style.display = "none"; // Oculta el botón inicial
+            document.getElementById("boton-futuro").style.display = "block"; // Muestra el botón del futuro
+        }
+
+        // Función para mostrar el futuro y ocultar el botón del futuro
+        function mostrarFuture() {
+            document.getElementById("future-section").style.display = "block"; // Muestra el futuro
+            document.getElementById("boton-futuro").style.display = "none"; // Oculta el botón del futuro
+        }
+    </script>
+</body>
+</html>
